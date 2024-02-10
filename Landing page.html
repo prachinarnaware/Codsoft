@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the World Travel Agency</title>
+    
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #792862;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+            
+        }
+
+        nav {
+            background-color: #ae3b9c;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        section {
+            flex: 1;
+            margin: 0 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+        }
+
+        h1, h2, h3 {
+            color: #1d0218;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .cta {
+            background-color: #5c244f;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .cta button {
+            background-color: #fff;
+            color: #7e277e;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .cta button:hover {
+            background-color: #6b8db2;
+            color: #fff;
+        }
+
+        .destination {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .destination img {
+            width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        form {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        form input,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        form button {
+            background-color: #6a2773;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        form button:hover {
+            background-color: #b93a8e;
+        }
+
+        .testimonials {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .testimonial {
+            flex: 1;
+            background-color: #ac5ba8;
+            color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-right: 10px;
+        }
+
+        .testimonial img {
+            width: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    
+    <header>
+        <h1>Explore the World Travel Agency</h1>
+        
+        <h><b><big>Your dream vacation is just a click away!</big></b></h>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Destinations</a>
+        <a href="#">Packages</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!--===========Nav Bar=================-->
+    <section class="nav-bar">
+        <div class="logo"><b>Go Trip</b></div>
+        <ul class="menu">
+            <li><a href="#">home</a></li>
+            <li><a href="#">tours</a></li>
+            <li><a href="#">package</a></li>
+            <li><a href="#">blog</a></li>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">contact us</a></li>
+        </ul>
+        </div>
+
+
+    <main>
+        <section class="destination">
+            <h2>Featured Destination</h2>
+            <img src="https://source.unsplash.com/800x600/?travel" >
+            <p>Discover the beauty of our featured destination. Book your trip now!</p>
+        </section>
+
+        <section>
+            <form>
+                <h2>Book Your Trip</h2>
+                <label for="destination">Select Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="paris">Paris</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option>London</option>
+                    <option>Canada</option>
+                    
+                    <option>Japan</option>
+                    
+                    <option>Switzerland</option>
+                    <option>Dubai</option>
+                    
+                    
+                </select>
+
+                <label for="departure">Departure Date:</label>
+                <input type="date" id="departure" name="departure" required>
+
+                <label for="people">Number of People:</label>
+                <input type="number" id="people" name="people" min="1" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section class="testimonials">
+            <div class="testimonial">
+                <img src="https://source.unsplash.com/50x50/?person">
+                <p>"Amazing experience! The travel agency made our trip unforgettable."</p>
+            </div>
+
+            <div class="testimonial">
+                <img src="https://source.unsplash.com/50x50/?person">
+                <p>"The service was excellent. We'll definitely use this agency for our next adventure."</p>
+            </div>
+        </section>
+    </main>
+    
+    </section>
+    <!--===============Banner================-->
+    <section class="banner">
+        <div class="banner-text-item">
+            <div class="banner-heading">
+                <h1> Popular tours now></h1>
+            </div>
+            <form class="form">
+                <input type="text" list="mylist" placeholder="Where would you like to go?">
+                <datalist id="mylist">
+                    <option>London</option>
+                    
+                    
+                    <option>Paris</option>
+                    
+                    <option>Switzerland</option>
+                    <option>tokeyo</option>
+                </datalist>
+                
+                <a href="#" class="book">book</a>
+            </form>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h3>Contact Us</h3>
+        <p>Ready to plan your next adventure? Contact us for personalized travel packages.</p>
+        <button>Contact Now</button>
+    </section>
+
+    <footer>
+        &copy; 2024 Explore the World Travel Agency. All rights reserved.
+    </footer>
+</body>
+</html>
+
